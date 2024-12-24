@@ -1,18 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useRef } from "react";
+import "./App.css";
+import ProjectCard from "./components/Card/ProjectCard";
+import Description from "./components/Description";
+import SkillCard from "./components/Card/SkillCard";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const descriptionRef = useRef(null);
+  const skillCardRef = useRef(null);
+  const projectCardRef = useRef(null);
+  
+  const scrollToSection = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    const sections = [descriptionRef, skillCardRef, projectCardRef];
+    let currentSection = 0;
+
+    const interval = setInterval(() => {
+      if (currentSection < sections.length) {
+        scrollToSection(sections[currentSection]);
+        currentSection++;
+      } else {
+        clearInterval(interval); 
+      }
+    }, 3000); 
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
-      <div className='flex justify-center items-center h-screen'>
-        <p className='text-green-600 text-4xl font-medium'>Nice To Meet You!</p>
+      <div className="gradient-background">
+        <div ref={descriptionRef}>
+          <Description />
+        </div>
+        <div ref={skillCardRef}>
+          <SkillCard />
+        </div>
+        <div ref={projectCardRef}>
+          <ProjectCard />
+        </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

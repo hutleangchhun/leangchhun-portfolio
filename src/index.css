@@ -5,7 +5,6 @@
 :root {
   font-family: "Ubuntu", serif;
   line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -15,4 +14,21 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.gradient-background {
+  background-image: linear-gradient(
+    to right top,
+    #242424,
+    #2a3039,
+    #223e4c,
+    #0b4e57,
+    #005e56,
+    #005e56,
+    #005e56,
+    #005e56,
+    #0b4e57,
+    #223e4c,
+    #2a3039,
+    #242424
+  );
 }
