@@ -47,7 +47,7 @@ const SkillCard = () => {
     );
   };
   return (
-    <div className="max-w-7xl mx-auto p-5 rounded-md">
+    <div className="max-w-7xl mx-auto p-5 rounded-md mb-20">
       <h3 className="text-lg sm:text-lg md:text-2xl font-medium mb-5">
         Skills
       </h3>

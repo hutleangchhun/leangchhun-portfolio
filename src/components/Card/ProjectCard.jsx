@@ -30,7 +30,7 @@ const ProjectCard = () => {
   // Card component
   const CardComponent = ({ icon, title, description, link, comingSoon }) => {
     return (
-      <div className="card p-5 bg-gray-900 bg-opacity-10 shadow-md rounded-lg hover:scale-105 duration-300 ease-in-out">
+      <div className="card p-5 bg-gray-900 bg-opacity-10 shadow-md rounded-lg hover:scale-95 duration-300 ease-in-out">
         <div className="icon text-4xl mb-3 text-green-500">{icon}</div>
         <h3 className="text-lg sm:text-lg md:text-xl mb-3 font-medium">
           {title}
@@ -52,7 +52,7 @@ const ProjectCard = () => {
   };
 
   return (
-    <div className="p-5 max-w-7xl mx-auto">
+    <div className="p-5 max-w-7xl mx-auto pb-28">
       <h3 className="text-lg sm:text-lg md:text-2xl font-medium my-5">
         Completed Projects
       </h3>

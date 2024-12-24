@@ -2,11 +2,9 @@ import React, { useEffect, useRef } from "react";
 import "./App.css";
 import ProjectCard from "./components/Card/ProjectCard";
 import Description from "./components/Description";
-import SkillCard from "./components/Card/SkillCard";
 
 function App() {
   const descriptionRef = useRef(null);
-  const skillCardRef = useRef(null);
   const projectCardRef = useRef(null);
   
   const scrollToSection = (ref) => {
@@ -17,7 +15,7 @@ function App() {
   };
 
   useEffect(() => {
-    const sections = [descriptionRef, skillCardRef, projectCardRef];
+    const sections = [descriptionRef, projectCardRef];
     let currentSection = 0;
 
     const interval = setInterval(() => {
@@ -36,9 +34,6 @@ function App() {
       <div className="gradient-background">
         <div ref={descriptionRef}>
           <Description />
-        </div>
-        <div ref={skillCardRef}>
-          <SkillCard />
         </div>
         <div ref={projectCardRef}>
           <ProjectCard />
