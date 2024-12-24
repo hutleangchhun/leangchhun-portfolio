@@ -32,14 +32,14 @@ const ProjectCard = () => {
     return (
       <div className="card p-5 bg-gray-900 bg-opacity-10 shadow-md rounded-lg hover:scale-105 duration-300 ease-in-out">
         <div className="icon text-4xl mb-3 text-green-500">{icon}</div>
-        <h3 className="text-base sm:text-base md:text-xl mb-3">
+        <h3 className="text-lg sm:text-lg md:text-xl mb-3 font-medium">
           {title}
         </h3>
-        <p className="text-gray-300 mb-3 text-sm sm:text-sm md:text-base font-medium sm:font-medium lg:font-normal">
+        <p className="text-gray-300 mb-3 text-base">
           {comingSoon ? "Coming Soon!" : description}
         </p>
         {comingSoon ? (
-          <span className="text-gray-500 text-sm sm:text-base md:text-base font-medium sm:font-medium lg:font-normal">
+          <span className="text-gray-500 text-base">
             Stay tuned!
           </span>
         ) : (
@@ -53,7 +53,7 @@ const ProjectCard = () => {
 
   return (
     <div className="p-5 max-w-7xl mx-auto">
-      <h3 className="text-lg sm:text-lg md:text-2xl my-5">
+      <h3 className="text-lg sm:text-lg md:text-2xl font-medium my-5">
         Completed Projects
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5">

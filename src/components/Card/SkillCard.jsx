@@ -39,7 +39,7 @@ const SkillCard = () => {
       <div className="card p-5 border-2 border-gray-900 border-opacity-20 flex flex-wrap flex-row items-center justify-between">
         <div className="text-2xl">{icon}</div>
         <div>
-          <p className="text-sm sm:text-sm md:text-base font-medium sm:font-medium lg:font-normal">
+          <p className="text-base">
             {title}
           </p>
         </div>
