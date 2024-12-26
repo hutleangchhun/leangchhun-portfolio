@@ -39,7 +39,7 @@ const ProjectCard = () => {
           {comingSoon ? "Coming Soon!" : description}
         </p>
         {comingSoon ? (
-          <span className="text-gray-500 text-base">
+          <span className="text-gray-400 text-base">
             Stay tuned!
           </span>
         ) : (
@@ -52,11 +52,11 @@ const ProjectCard = () => {
   };
 
   return (
-    <div className="p-5 max-w-7xl mx-auto pb-28">
-      <h3 className="text-lg sm:text-lg md:text-2xl font-medium my-5">
+    <div className="p-5 max-w-7xl mx-auto pb-24 min-h-screen flex flex-col justify-center items-center">
+      <h3 className="text-2xl sm:text-2xl md:text-3xl font-medium my-10">
         Completed Projects
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 pb-10">
         {cardData.map((card, index) => (
           <CardComponent
             key={index}

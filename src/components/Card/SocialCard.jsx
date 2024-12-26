@@ -11,7 +11,7 @@ const cardData = [
   },
   {
     icon: <FaInstagram />,
-    link: "https://www.instagram.com/leangchhun.mp4/profilecard/?igsh=MXY5Y2R6aHcxNXhyeg==",
+    link: "https://www.instagram.com/leangchhun.mp4/",
   },
   {
     icon: <FaWhatsapp />,
