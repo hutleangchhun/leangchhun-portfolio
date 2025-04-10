@@ -4,13 +4,14 @@ import ProjectCard from "./components/Card/ProjectCard";
 import Description from "./components/Description";
 import Footer from "./components/Footer/footer";
 import Service from "./components/OurService/Service";
+import Skill from "./components/Skill/Skill";
 
 function App() {
   return (
     <>
       <div className="gradient-background">
         <Description />
-        <Service />
+        <Skill />
         <ProjectCard />
         <Footer />
       </div>
