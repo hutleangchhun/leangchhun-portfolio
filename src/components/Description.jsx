@@ -9,9 +9,7 @@ const FreelancerDescription = () => {
             Nice To See You!
           </h2>
           <p className="text-gray-300 text-base sm:text-base md:text-xl max-w-3xl mx-auto opacity-100">
-            Are you looking for a website to improve your business? I help
-            create responsive and user-friendly websites for your needs.
-            Hello. This is new shell. New configuration
+            Hello. This is new shell. New configuration.Pushing from local machine using gitHook and webhook to vps server(Ubuntu).
           </p>
           <SocialCard />
         </div>
