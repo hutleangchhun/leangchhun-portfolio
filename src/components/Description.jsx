@@ -1,4 +1,3 @@
-import React from "react";
 import SocialCard from "./Card/SocialCard";
 
 const FreelancerDescription = () => {
