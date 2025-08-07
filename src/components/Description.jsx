@@ -11,6 +11,7 @@ const FreelancerDescription = () => {
           <p className="text-gray-300 text-base sm:text-base md:text-xl max-w-3xl mx-auto opacity-100">
             Hello. This is new shell. New configuration.Pushing from local machine using gitHook and webhook to vps server(Ubuntu).Docker Implement.
           </p>
+          <p>Docker test.</p>
           <SocialCard />
         </div>
       </div>
